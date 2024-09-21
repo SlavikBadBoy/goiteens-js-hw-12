@@ -1,18 +1,19 @@
-// const countTotalSalary = (employees) => {
-//   let totalSalary = 0;
+const countTotalSalary = (employees) => {
+  let totalSalary = 0;
 
-//   for (const salary of Object.values(employees)) {
-//     totalSalary += salary;
-//   }
+  for (const salary in employees) {
+    totalSalary += employees[salary];
+  }
 
-//   return totalSalary;
-// };
+  return totalSalary;
+};
 
-// const employees = {
-//   Apple: 1000,
-//   Google: 1500,
-//   Microsoft: 2000,
-// };
+const employees = {
+  Vanessa: 1000,
+  Orange: 1500,
+  Ajax: 2000,
+  Watermelon: 3500,
+};
 
-// const total = countTotalSalary(employees);
-// console.log(`Загальна сума зарплати: ${total}`);
+
+console.log(`Загальна зарплата - ${countTotalSalary(employees)}`);

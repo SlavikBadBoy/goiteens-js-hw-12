@@ -1,17 +1,15 @@
-// const user = {
-//   name: "Ajax",
-//   age: 18,
-//   hobby: "zorbing",
-//   premium: true,
-// };
+const user = {
+  name: "John",
+  age: 30,
+  hobby: "reading",
+};
 
-// user.mood = "happy";
-// user.hobby = "skydiving";
-// user.premium = false;
-// console.log(user);
+user.mood = "happy";
 
-// const keys = Object.keys(user);
+user.hobby = "skydiving";
 
-// for (let key of keys) {
-//   console.log(`${key}: ${user[key]}`);
-// }
+user.premium = false;
+const keys = Object.keys(user);
+for (let key of keys) {
+  console.log(`${key}: ${user[key]}`);
+}
